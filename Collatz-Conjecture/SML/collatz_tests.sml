@@ -1,5 +1,7 @@
 (* Tests for the main function *)
 
+use "collatz.sml";
+
 val collatz_test0 = collatz  1 = SOME 0
 val collatz_test1 = collatz  9 = SOME 19
 val collatz_test2 = collatz 12 = SOME 9
