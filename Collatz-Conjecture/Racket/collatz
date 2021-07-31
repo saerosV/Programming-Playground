@@ -1,0 +1,22 @@
+#lang racket
+
+;; int -> int
+;; Given a integer n, calculate the number of steps it takes for n to reach 1.
+
+(define (collatz n)
+  (define (helper n steps)
+    (cond ((< n 1) "n must be bigger or equal to one")
+          ((= n 1) steps)
+          ((odd?  n) (helper (+ (* n 3) 1) (+ steps 1)))
+          ((even? n) (helper (/ n 2) (+ steps 1)))))
+  (helper n 0))
+
+(collatz -1)
+(collatz 0)
+(collatz 1)
+(collatz 9)
+(collatz 12)
+(collatz 19)
+(collatz 27)
+(collatz 931386509544713451)
+
