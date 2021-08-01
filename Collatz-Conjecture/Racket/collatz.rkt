@@ -4,7 +4,7 @@
 (provide (all-defined-out))
 
 ;; int -> int
-;; Given a integer n, calculate the number of steps it takes for n to reach 1.
+;; Given an integer n, calculate the number of steps it takes for n to reach 1.
 
 (define (collatz n)
   (define (helper n steps)

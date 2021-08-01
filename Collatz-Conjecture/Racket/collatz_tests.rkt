@@ -18,9 +18,6 @@
    (check-equal? (collatz 27) 111  "Input: 111")
 ))
    
-   
-   
 (require rackunit/text-ui)
 ;; runs the test
 (run-tests tests)
- 
