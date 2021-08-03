@@ -1,4 +1,4 @@
-y(* Tests for the main function *)
+(* Tests for the main function *)
 
 use "collatz.sml";
 
