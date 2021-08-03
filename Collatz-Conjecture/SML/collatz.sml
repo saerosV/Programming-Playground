@@ -21,14 +21,10 @@ fun collatz (n: IntInf.int) =
         let
             fun helper n steps =
                 case n of
-                (* Base case, returns the number of steps once n becomes one.*)
-                    1 => SOME steps 
+                (* Base case. 
+                 * Returns "SOME number of steps" once n becomes one.*)
+                    1 => SOME steps
                   | n  => case n mod 2 of
-                            (* If n is even, recursively call helper with
-                             * (/ n 2) and (+ steps 1) as parameters.
-                             * Otherwise, if n is odd, recursively call helper
-                             * with (+ (* n 3) 1) and (+ steps 1) as parameters
-                             *)  
                               0 => helper (n div 2) (steps + 1)
                             | _ => helper ((n * 3) + 1) (steps + 1)
         in
