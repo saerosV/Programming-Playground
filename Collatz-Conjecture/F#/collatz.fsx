@@ -7,4 +7,5 @@ let collatz n =
                 | n -> match n % 2 with
                         | 0 -> helper (n / 2) (steps + 1)
                         | _ -> helper ((n * 3) + 1) (steps + 1)
-         helper n 0 
+         helper n 0
+          
