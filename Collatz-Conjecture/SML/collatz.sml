@@ -25,11 +25,11 @@ fun collatz (n: IntInf.int) =
                     1 => SOME steps 
                   | n  => case n mod 2 of
                             (* If n is even, recursively call helper with
-                             * (/ n 2) and (+ steps 1) as parameters.*)  
-                              0 => helper (n div 2) (steps + 1)
-                            (* Otherwise, if n is odd, recursively call helper
+                             * (/ n 2) and (+ steps 1) as parameters.
+                             * Otherwise, if n is odd, recursively call helper
                              * with (+ (* n 3) 1) and (+ steps 1) as parameters
                              *)  
+                              0 => helper (n div 2) (steps + 1)
                             | _ => helper ((n * 3) + 1) (steps + 1)
         in
             helper n 0
