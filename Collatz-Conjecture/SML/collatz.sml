@@ -5,7 +5,7 @@
  * times the previous term plus 1. The conjecture is that no matter what value
  * of n, the sequence will always reach 1 *)
 
-(* int -> int option
+(* IntInf.int -> int option
  * Tail recursive function, that calculates how many steps it takes for a given
  * integer (n), following the Collatz Conjecture formula, to reach 1.
  *)
