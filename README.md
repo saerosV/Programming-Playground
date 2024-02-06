@@ -1,6 +1,6 @@
 ## Programming Playground
 
-Repo for miscellaneous snippets of code, created in order to solve interesting mathematical (or not) problems I may come across.
+Repo to store miscellaneous snippets of code, that aim to solve interesting mathematical (or not) problems I may come across.
 
 ***
 
